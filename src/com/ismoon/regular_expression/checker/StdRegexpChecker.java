@@ -1,22 +1,16 @@
-package com.ismoon.regular_expression;
+package com.ismoon.regular_expression.checker;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @author ismoon on 2018. 1. 14.
+ * @author ismoon on 2018. 1. 15.
  */
-public class RegexpChecker{
-
-    private String regexp = null;
-
-    public void setRegexp(String regexp) {
-        this.regexp = regexp;
-    }
-
+public class StdRegexpChecker extends AbstractRegexpChecker {
+    @Override
     public void checkRegexp(String input) {
 
-        if (null == regexp || input.equals("")) {
+        if (null == this.regexp || input.equals("")) {
             throw new IllegalArgumentException();
         }
 
