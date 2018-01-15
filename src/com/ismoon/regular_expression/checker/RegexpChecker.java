@@ -4,11 +4,17 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @author ismoon on 2018. 1. 15.
+ * @author ismoon on 2018. 1. 14.
  */
-public class StdRegexpChecker extends AbstractRegexpChecker {
-    @Override
-    public void checkRegexp(String input) {
+public class RegexpChecker {
+
+    private String regexp = null;
+
+    public void setRegexp(String regexp) {
+        this.regexp = regexp;
+    }
+
+    public void checkRegexp(String input){
 
         if (null == this.regexp || input.equals("")) {
             throw new IllegalArgumentException();
