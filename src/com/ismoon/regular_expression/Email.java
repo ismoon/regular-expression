@@ -24,6 +24,6 @@ public class Email {
         if (matcher.matches())
             System.out.println("Email : " + email);
         else
-            System.out.println("No matching pattern : " + email);
+            System.out.println("No Matching Pattern : " + email);
     }
 }

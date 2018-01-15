@@ -28,6 +28,6 @@ public class PhoneNumber {
         if (matcher.find() && matcher.groupCount() == 3)
             System.out.println(matcher.group(1) + "-" + matcher.group(2) + "-" + matcher.group(3));
         else
-            System.out.println("No matching pattern : " + phoneNum);
+            System.out.println("No Matching Pattern : " + phoneNum);
     }
 }
